@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+        <link href="styles/nav.css" rel="stylesheet">
+        <link href="styles/content.css" rel="stylesheet">
+        <link href="styles/mainBody.css" rel="stylesheet">
+        
+        <script src="js/functions/imageCarousel.js"></script>
+        <script src="js/functions/changePage.js"></script>
+
+        <script src="js/content/makeHome.js"></script>
+        <script src="js/content/makeAboutMe.js"></script>
+        <script src="js/content/makeEducation.js"></script>
+        <script src="js/content/makeWorkExperience.js"></script>
+        <script src="js/content/makePortfolio.js"></script>
+        <script src="js/content/makeContactMe.js"></script>
+        
+    </head>
+    <body>
+        
+        <div id="content">
+            <img class="imageCarousel" id="contentImage" style="z-index: -1"></img>
+            <div id="contentBox1">
+                <div id="contentTitle"></div>
+                <div id="contentText"></div>
+            </div>
+            <div id="contentBox2">
+                <div id="projectBox">
+                    <div class="project">fartass
+                        <img src="pics/bell tower small.png"></img>
+                    </div>
+                    <div class="project">fartass
+                        <img src="pics/bell tower small.png"></img>
+                    </div><div class="project">fartass
+                        <img src="pics/bell tower small.png"></img>
+                    </div><div class="project">fartass
+                        <img src="pics/bell tower small.png"></img>
+                    </div><div class="project">fartass
+                        <img src="pics/bell tower small.png"></img>
+                    </div><div class="project">fartass
+                        <img src="pics/bell tower small.png"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <img src="pics/me in nice clothes small.png"></img>
+            <div class="navTitle">
+                Christian Berkhimer
+            </div>
+            <div class="navText">
+                <div style="font-weight:lighter; padding-bottom: 1rem;">
+                    IST MAJOR AT TEMPLE UNIVERSITY
+                </div>
+                <button id="home" onclick="changePage('home')">
+                    Home
+                </button><br>
+                <button id="aboutMe" onclick="changePage('aboutMe')">
+                    About Me
+                </button><br>
+                <button id="education" onclick="changePage('education')">
+                    Education
+                </button><br>
+                <button id="workExperience" onclick="changePage('workExperience')">
+                    Work Experience
+                </button><br>
+                <!--<button id="portfolio" onclick="changePage('portfolio')">
+                    Portfolio
+                </button><br>-->
+                <a id="resume" href="resume.pdf" target="_blank">
+                    Resume
+                </a><br>
+                <button id="contactMe" onclick="changePage('contactMe')">
+                    Contact Me
+                </button><br>
+            </div>
+        </div>
+    </body>
+    <script>
+        makeHome(["80%", "-50rem"]);
+    </script>
+</html>
