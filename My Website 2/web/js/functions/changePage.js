@@ -41,8 +41,8 @@ function changePage(pageName){
         case "portfolio":
             makePortfolio(layout_full);
             break;
-        case "contactMe":
-            makeContactMe(layout_large);
+        case "personalInfo":
+            makePersonalInfo(layout_large);
             break;
     }
 }
