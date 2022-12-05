@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            My Website
+            Welcome to My Website!
         </title>
         <link href="styles/nav.css" rel="stylesheet">
         <link href="styles/content.css" rel="stylesheet">
@@ -14,35 +14,17 @@
         <script src="js/content/makeAboutMe.js"></script>
         <script src="js/content/makeEducation.js"></script>
         <script src="js/content/makeWorkExperience.js"></script>
-        <script src="js/content/makePortfolio.js"></script>
         <script src="js/content/makePersonalInfo.js"></script>
         
     </head>
     <body>
         
         <div id="content">
-            <img class="imageCarousel" id="contentImage" style="z-index: -1"></img>
-            <div id="contentBox1">
+            <div id="imageCarousel">
+            </div>
+            <div id="contentBox">
                 <div id="contentTitle"></div>
                 <div id="contentText"></div>
-            </div>
-            <div id="contentBox2">
-                <div id="projectBox">
-                    <div class="project">fartass
-                        <img src="pics/bell tower small.png"></img>
-                    </div>
-                    <div class="project">fartass
-                        <img src="pics/bell tower small.png"></img>
-                    </div><div class="project">fartass
-                        <img src="pics/bell tower small.png"></img>
-                    </div><div class="project">fartass
-                        <img src="pics/bell tower small.png"></img>
-                    </div><div class="project">fartass
-                        <img src="pics/bell tower small.png"></img>
-                    </div><div class="project">fartass
-                        <img src="pics/bell tower small.png"></img>
-                    </div>
-                </div>
             </div>
         </div>
         <div id="nav">
@@ -66,9 +48,6 @@
                 <button id="workExperience" onclick="changePage('workExperience')">
                     Work Experience
                 </button><br>
-                <!--<button id="portfolio" onclick="changePage('portfolio')">
-                    Portfolio
-                </button><br>-->
                 <a id="resume" href="resume.pdf" target="_blank">
                     Resume
                 </a><br>
@@ -78,7 +57,7 @@
             </div>
         </div>
     </body>
-    <script>
+    <script id="js">
         makeHome(["80%", "-50rem"]);
     </script>
 </html>

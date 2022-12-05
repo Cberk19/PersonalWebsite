@@ -1,15 +1,13 @@
 function makeHome(layout){
 
-    var contentBox1 = document.getElementById("contentBox1"); // gets the contentBox, button, title, and the text and puts them in local vars
-    var contentBox2 = document.getElementById("contentBox2"); 
+    var contentBox = document.getElementById("contentBox"); // gets the contentBox, button, title, and the text and puts them in local vars
     var button = document.getElementById("home");
     var title = document.getElementById("contentTitle");
     var text = document.getElementById("contentText");
 
-    contentBox1.className = "home"; // changes class name so that the changePage function can determine the current page
+    contentBox.className = "home"; // changes class name so that the changePage function can determine the current page
 
-    contentBox1.style = layout[0]; // sets style for info content box
-    contentBox2.style = layout[1]; // sets style for portfolio content box
+    contentBox.style = layout; // sets style for info content box
 
     title.offsetHeight; // refreshes animation
     text.offsetHeight;

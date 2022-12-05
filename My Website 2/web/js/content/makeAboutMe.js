@@ -11,16 +11,13 @@ function makeAboutMe(layout){
 
     imageCarousel(imgArr); // starts the image carousel using the array of images
 
-    document.getElementById("contentBox1").className = "aboutMe"; // changes class name so that the changePage function can determine the current page
-
-    var contentBox1 = document.getElementById("contentBox1"); // gets the content box, button, title, and the text and puts them in local vars
-    var contentBox2 = document.getElementById("contentBox2");
+    var contentBox = document.getElementById("contentBox"); // gets the content box, button, title, and the text and puts them in local vars
+    contentBox.className = "aboutMe"; // changes class name so that the changePage function can determine the current page
     var button = document.getElementById("aboutMe");
     var title = document.getElementById("contentTitle");
     var text = document.getElementById("contentText");
 
-    contentBox1.style = layout[0]; // sets style for info content box
-    contentBox2.style = layout[1]; // sets style for portfolio content box
+    contentBox.style = layout; // sets style for info content box
 
     title.offsetHeight; // refreshes animation
     text.offsetHeight;
